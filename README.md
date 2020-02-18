@@ -1,3 +1,3 @@
 # maratona_dev
-Day 2
-Evento gratuito da empresa ROCKETSEAT
+<h2>Day 2</h2> <br>
+<p>Evento <i>gratuito</> da empresa <strong>ROCKETSEAT</strong></p>
