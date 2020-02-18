@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --primary-color: #f9f9f9f9;
+    --secondary-color: #ff4f4f;
+    --third-color: #f42f49;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    background-color: var(--primary-color);
+}
+span{
+    color: var(--third-color);
+}
+button {
+    font-weight: bold;
+    font-size: 18px;
+
+    margin: 0 auto;
+    padding: 8px 16px;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    background-color: var(--third-color);
+    color: #fff;
+}
+header,
+footer {
+    background-color: var(--primary-color);
+    color: black;
+
+    text-align: center;
+
+    width: 100%;
+    padding: 27px 0;
+
+}
+footer{
+    margin-top: 23.3vh;
+    
+    background-color: black;
+    color: var(--primary-color);
+}
+
+/* HEADER LOGO */
+.logo img {
+    max-width: 130px;
+    max-height: 100%;
+}
+.logo{
+    margin: 20px;
+}
+/* content article */
+.article {
+    display: grid;
+    grid-template-columns: 420px;
+    align-items: center;
+    justify-content: center;
+    
+    text-align: center;
+    line-height: 2.5em;
+
+}
+.article p{
+    text-align: center;
+}
+.article__title {
+    font-size: 25px;
+}
+/* register doner */
+.register{
+    width: 40% !important;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    align-items: center;
+    justify-content: center;
+
+    text-align: end;
+    grid-gap: 25px;
+
+    border-radius: 5px;
+    padding: 20px 0;
+    margin: 20px;
+    
+    background-color: var(--third-color);
+    color: var(--primary-color);
+
+    transition: all 450ms;
+}
+.register form{
+    position: relative;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.register input{
+    width: 100%;
+
+    padding: 8px 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    background-color: transparent;
+    color: #dacad1;
+    border: 1px solid var(--secondary-color);
+    
+    margin: 2px;
+}
+.register input::placeholder{
+    color: #fff;
+}
+.register button{
+    width: 100%;
+
+    background-color: var(--primary-color);
+    color: #000;
+
+    font-size: 16px;
+}
+.register.hide,
+.register.hide form {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -30px;
+
+    background-color: transparent;
+}
+
+
+/* MAIN DONNERS */
+.title h1{
+    margin: 35px auto;
+    
+    text-align: center;
+    font-size: 25px;
+
+}
+.doners{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   text-align: center;
+   margin: 0 15px;
+}
+.donor__blood{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    text-align: center;
+    background-color: #dacad1;
+    color: var(--third-color);
+    font-weight: bold;
+
+    margin-bottom: 15px;
+    padding: 8px 8px;
+    border-radius: 50%;
+}
+.donor__item{
+    margin-top: 10px;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+
+
+
+/* CONTAINER AND BREAKPOINTS */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 600px) {
+    /* CONTENT ARITCLE */
+    .article{
+        grid-template-columns: 1fr;
+    }
+    .article p {
+        text-align: text;
+    }
+    /* Register */
+    .register{
+        width: 100% !important;
+        padding: 20px;
+        text-align: center;
+        
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    /* DONERS */
+    .doners{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* BREAKPOINT 768px */
+@media (min-width: 48em) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* BREAKPOINT 992px */
+@media (min-width: 62em) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* BREAKPOINT 1200px */
+@media (min-width: 75em) {
+    .containe-fluid {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
