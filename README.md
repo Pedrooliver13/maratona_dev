@@ -1,5 +1,5 @@
 # maratona_dev
-<div style="background-color:rgb(32, 32, 36); text-align:center;">
+<div style="display:flex; align-items:center; background-color:rgb(32, 32, 36); text-align:center;">
   <img style="text-align:center;" src="https://rocketseat.com.br/static/images/maratonadev/logo.svg">
 </div>
 <h2 style="text-align:center;">Day 2</h2><br>
