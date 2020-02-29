@@ -1,7 +1,9 @@
-const registerDoner = document.querySelector(".register")
-const appearForm = document.querySelector("#appearForm")
-
-appearForm.addEventListener("click" , ()=>{
-    registerDoner.classList.toggle("hide")
-
-})
+const eventButton = {
+    apply(button , func){
+        button.addEventListener('click' , eventButton[func]())
+    },
+    appearForm(){
+        const registerDoner = document.querySelector(".register")
+        return registerDoner.classList.toggle("hide")
+    }
+}
