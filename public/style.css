@@ -87,7 +87,8 @@ footer{
 }
 /* register doner */
 .register{
-    width: 40% !important;
+    max-width: 70%;
+    width: 700px; 
     
     display: grid;
     grid-template-columns: repeat(2, 200px);
@@ -104,7 +105,7 @@ footer{
     background-color: var(--third-color);
     color: var(--primary-color);
 
-    transition: all 450ms;
+    transition: all 150ms;
 }
 .register form{
     position: relative;
@@ -143,7 +144,6 @@ footer{
     height: 0;
     margin-top: -30px;
 
-    background-color: transparent;
 }
 
 
@@ -221,6 +221,10 @@ footer{
 
 /* BREAKPOINT 768px */
 @media (min-width: 48em) {
+    .register{
+        max-width: 70%;
+        width: 500px; 
+    }
     .container {
         max-width: 720px;
     }
@@ -228,6 +232,10 @@ footer{
 
 /* BREAKPOINT 992px */
 @media (min-width: 62em) {
+    .register{
+        max-width: 70%;
+        width: 500px; 
+    }
     .container {
         max-width: 960px;
     }
